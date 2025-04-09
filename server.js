@@ -5,7 +5,7 @@ const middlewares = jsonServer.defaults();
 
 // Enable CORS
 server.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*"); // or replace * with your frontend domain
+  res.header("Access-Control-Allow-Origin", "http://localhost:3000"); // or replace * with your frontend domain
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, PATCH, DELETE");
   res.header("Access-Control-Allow-Headers", "Content-Type");
   next();
